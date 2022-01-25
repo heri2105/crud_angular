@@ -1,0 +1,26 @@
+
+<div class="container">
+    <p>Modificar Usuario</p>
+    <div class="row">
+        <div class="col-sm-6">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Nombre del usuario</label>
+                    <input [(ngModel)]="equipo.username" type="text" class="form-control" name="username">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Correo</label>
+                    <input [(ngModel)]="equipo.correo" type="text" class="form-control" name="correo">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Telefono</label>
+                    <input [(ngModel)]="equipo.telefono" type="text" class="form-control" name="telefono">
+                </div>
+                <button (click)="modificar()" class="btn btn-primary">Actualizar Usuario</button>
+            </form>
+        </div>
+
+    </div>
+    
+</div>
+
